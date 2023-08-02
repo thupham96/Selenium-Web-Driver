@@ -57,3 +57,5 @@ class InternetSpeedTwitterBot():
         data_content_box.send_keys(message)
         post_button = self.driver.find_element(By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div[3]/div/span/span')
         post_button.click()
+        time.sleep(10)
+        self.driver.quit()
